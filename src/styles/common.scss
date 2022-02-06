@@ -1,0 +1,87 @@
+.burger {
+  cursor: pointer;
+  height: 22px;
+  position: relative;
+  width: 40px;
+
+  & span {
+    background-color: #fee040;
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+  }
+
+  & span:first-child {
+    left: 0;
+  }
+
+  & span:last-child {
+    right: 0;
+  }
+
+  &::before,
+  &::after {
+    background-color: #ffffff;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.yellow-button {
+  background-color: #fee040;
+  color: #000000;
+  font-size: 12px;
+  height: 70px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  padding: 0 57px;
+  text-transform: uppercase;
+}
+
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--mail {
+    background-image: url('../img/mail.svg');
+  }
+
+  &--phone {
+    background-image: url('../img/phone.svg');
+  }
+
+  &--download {
+    background-image: url('../img/download.svg');
+  }
+
+  &--poligon {
+    background-image: url('../img/Polygon.svg');
+  }
+
+  &--one {
+    background-image: url('../img/01.svg');
+  }
+
+  &--two {
+    background-image: url('../img/02.svg');
+  }
+
+  &--three {
+    background-image: url('../img/03.svg');
+  }
+}

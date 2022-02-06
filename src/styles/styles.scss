@@ -1,0 +1,15 @@
+@import './reset-styles.scss';
+@import './common.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+
+  // & main {
+  //   position: relative;
+  //   top: -80px;
+  // }
+}
+
+@import './hero.scss';
