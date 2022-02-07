@@ -1,0 +1,143 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 121px;
+  padding: 0 250px;
+
+  @media (max-width: 1800px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 1600px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 1050px) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  &__logo-site {
+    align-self: center;
+    display: grid;
+    margin: 20px 0;
+
+    & p {
+      color: #707070;
+      font-size: 12px;
+      line-height: 18px;
+      max-width: 296px;
+    }
+  }
+
+  &__contacts {
+    align-self: center;
+    display: grid;
+
+    & > div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 750px) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__mail {
+    color: #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 124px;
+
+    & > span {
+      align-items: center;
+      display: flex;
+      font-size: 12px;
+      letter-spacing: -0.5px;
+      line-height: 12px;
+      opacity: 50%;
+
+      & > span {
+        display: inline-block;
+        height: 12px;
+        margin-right: 9px;
+        width: 10px;
+      }
+    }
+
+    & > a {
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 7px;
+    }
+  }
+
+  &__number {
+    color: #151515;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: left;
+    width: 169px;
+
+    & > span:first-child {
+      font-size: 12px;
+      letter-spacing: -0.5px;
+      line-height: 12px;
+      opacity: 50%;
+
+      & > span {
+        display: inline-block;
+        height: 12px;
+        margin-right: 7px;
+        width: 12px;
+      }
+    }
+
+    & > span:last-child {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 7px;
+    }
+  }
+
+  &__adress {
+    color: #151515;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: left;
+    width: 323px;
+
+    @media (max-width: 750px) {
+      max-width: 323px;
+      width: auto;
+    }
+
+    & > span:first-child {
+      font-size: 12px;
+      letter-spacing: -0.5px;
+      line-height: 12px;
+      opacity: 50%;
+
+      & > span {
+        display: inline-block;
+        height: 10.2px;
+        margin-right: 6.2px;
+        width: 12.6px;
+      }
+    }
+
+    & > span:last-child {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 7px;
+    }
+  }
+}

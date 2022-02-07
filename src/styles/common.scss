@@ -65,8 +65,20 @@
     background-image: url('../img/mail.svg');
   }
 
+  &--mail-gray {
+    background-image: url('../img/mail-gray.svg');
+  }
+
   &--phone {
     background-image: url('../img/phone.svg');
+  }
+
+  &--phone-gray {
+    background-image: url('../img/phone-gray.svg');
+  }
+
+  &--home {
+    background-image: url('../img/home.svg');
   }
 
   &--download {
