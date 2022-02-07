@@ -50,6 +50,10 @@
   line-height: 15px;
   padding: 0 57px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #c0ab31;
+  }
 }
 
 .icon {

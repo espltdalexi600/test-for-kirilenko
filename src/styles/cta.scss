@@ -1,0 +1,70 @@
+.cta {
+  position: relative;
+  padding: 100px 0;
+
+  &__bg {
+    background-image: url('../img/nathan-dumlao-485797-unsplash.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    &::after {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 78, 134, 0.8) 0%,
+        rgba(10, 65, 104, 0.8) 100%
+      );
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__header {
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 863px;
+
+    & h4 {
+      font-size: 32px;
+      letter-spacing: -0.5px;
+      line-height: 42px;
+      margin-bottom: 39px;
+      text-align: center;
+
+      & span {
+        color: #fee040;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      line-height: 28px;
+      margin: 0 auto;
+      max-width: 680px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 29px auto 0 auto;
+
+    & span {
+      display: inline-block;
+      height: 12px;
+      margin-right: 10px;
+      width: 14px;
+    }
+  }
+}
