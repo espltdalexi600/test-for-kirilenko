@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
+  target: 'web',
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: './index.js',
@@ -13,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
+    watchFiles: ['src/**'],
     port: 4200,
   },
   plugins: [

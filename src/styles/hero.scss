@@ -1,42 +1,18 @@
-.hero {
-  height: 768px;
+.nav {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 80px;
+  padding: 0 250px;
   position: relative;
+  z-index: 1;
 
-  &__bg {
-    background-image: url('../img/sean-pollock-203658-unsplash.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 768px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: -80px;
-    z-index: 0;
-
-    &::after {
-      background: linear-gradient(
-        180deg,
-        rgba(0, 78, 134, 0.8) 0%,
-        rgba(10, 65, 104, 0.8) 100%
-      );
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  @media (max-width: 1800px) {
+    padding: 0 150px;
   }
 
-  &__nav {
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 80px;
-    padding: 0 250px;
-    position: relative;
-    z-index: 1;
+  @media (max-width: 1600px) {
+    padding: 0 50px;
   }
 
   &__burger-logo-wrapper {
@@ -46,7 +22,9 @@
     & > div {
       align-items: center;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
+      margin-right: 30px;
+      max-width: 317px;
     }
   }
 
@@ -56,7 +34,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 30px;
-    margin-left: 80px;
     width: 197px;
   }
 
@@ -87,6 +64,7 @@
       & > span {
         display: inline-block;
         height: 7.5px;
+        margin-right: 9px;
         width: 10px;
       }
     }
@@ -103,6 +81,7 @@
       font-size: 12px;
       line-height: 12px;
       opacity: 50%;
+      text-align: right;
 
       & > span {
         display: inline-block;
@@ -114,6 +93,52 @@
     & > span:last-child {
       font-size: 20px;
       line-height: 24px;
+      text-align: right;
+    }
+  }
+}
+
+.hero {
+  height: 688px;
+  padding: 0 250px;
+  position: relative;
+
+  @media (max-width: 1800px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 1600px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
+  &__bg {
+    background-image: url('../img/sean-pollock-203658-unsplash.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    z-index: 0;
+
+    &::after {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 78, 134, 0.8) 0%,
+        rgba(10, 65, 104, 0.8) 100%
+      );
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
@@ -121,17 +146,15 @@
     color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 688px;
-    padding: 0 250px 60px 250px;
     position: relative;
 
-    & > div {
-      position: relative;
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
     }
+  }
 
-    & > div:first-child {
-      grid-column: span 2;
-    }
+  &__left {
+    grid-column: span 2;
   }
 
   &__header-wrapper {
@@ -139,11 +162,20 @@
     display: flex;
     height: 510px;
     justify-content: center;
+
+    @media (max-width: 1200px) {
+      height: auto;
+      padding: 30px 0;
+    }
   }
 
   &__header {
     height: 209px;
     width: 720px;
+
+    @media (max-width: 1200px) {
+      height: auto;
+    }
 
     & h1 {
       font-size: 42px;
@@ -166,6 +198,11 @@
     height: 178px;
     justify-content: space-between;
 
+    @media (max-width: 1200px) {
+      height: auto;
+      padding: 30px 0;
+    }
+
     & div {
       display: flex;
       flex: 0 0 270px;
@@ -181,11 +218,26 @@
     }
   }
 
+  &__right {
+    position: relative;
+
+    @media (max-width: 1200px) {
+      grid-column: span 2;
+    }
+  }
+
   &__but-wrapper {
     align-items: center;
     display: flex;
     height: 510px;
     justify-content: flex-start;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-around;
+      padding: 30px 0;
+    }
   }
 
   &__but {
@@ -216,6 +268,12 @@
     position: absolute;
     right: 0;
     width: 220px;
+
+    @media (max-width: 1200px) {
+      bottom: auto;
+      position: relative;
+      right: auto;
+    }
 
     &:hover > img {
       transform: translate(-50%, -50%) scale(0.9, 0.9);
