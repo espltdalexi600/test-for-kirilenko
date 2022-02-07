@@ -45,6 +45,14 @@ module.exports = {
           from: path.resolve(__dirname, 'src/img/list_3.png'),
           to: path.resolve(__dirname, 'dist'),
         },
+        {
+          from: path.resolve(__dirname, 'src/img/henry-co-180108-unsplash.png'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/img/706181.png'),
+          to: path.resolve(__dirname, 'dist'),
+        },
       ],
     }),
   ],
