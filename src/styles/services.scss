@@ -11,6 +11,10 @@
     padding: 100px 50px 0 50px;
   }
 
+  @media (max-width: $mobile_width) {
+    padding: 50px 15px 0 15px;
+  }
+
   &__bg {
     background-image: url('../img/patrick-tomasso-89367-unsplash.png');
     background-position: center center;
@@ -59,6 +63,11 @@
       font-size: 32px;
       line-height: 42px;
       letter-spacing: -0.5px;
+
+      @media (max-width: $mobile_width) {
+        font-size: 25px;
+        line-height: normal;
+      }
     }
   }
 
@@ -78,6 +87,10 @@
 
     @media (max-width: 1600px) {
       padding: 29px 0 0 50px;
+    }
+
+    @media (max-width: $mobile_width) {
+      padding: 29px 0 0 15px;
     }
 
     &::-webkit-scrollbar {
@@ -100,8 +113,8 @@
       min-width: 400px;
       position: relative;
 
-      @media (max-width: 600px) {
-        min-width: 300px;
+      @media (max-width: $mobile_width) {
+        min-width: 280px;
       }
 
       & img {

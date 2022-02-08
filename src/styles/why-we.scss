@@ -1,8 +1,7 @@
 .why-we {
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 449px;
-  justify-content: space-between;
   padding: 0 250px;
   position: relative;
 
@@ -15,43 +14,46 @@
   }
 
   @media (max-width: 1200px) {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
     height: auto;
-    justify-content: space-around;
-    padding: 30px 50px;
+    padding: 50px 50px;
   }
 
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
-
-  &__header-wrapper {
-    display: flex;
-    flex: 0 1 460px;
-
-    @media (max-width: 1000px) {
-      flex-basis: 300px;
-    }
+  @media (max-width: $mobile_width) {
+    padding: 50px 15px;
   }
 
   &__header {
+    align-self: center;
+    display: grid;
     max-width: 460px;
+
+    @media (max-width: 1200px) {
+      justify-self: center;
+    }
 
     & h3 {
       color: #151515;
       font-family: 'Gilroy-ExtraBold';
       font-size: 32px;
-      height: 126px;
       letter-spacing: -0.5px;
       line-height: 42px;
       margin-bottom: 50px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $mobile_width) {
+        font-size: 24px;
+        line-height: normal;
+      }
     }
 
     & p {
       color: #707070;
       font-family: 'Proxima_Nova-Semibold';
       font-size: 18px;
-      height: 84px;
       letter-spacing: -0.5px;
       line-height: 28px;
       opacity: 0.7;
@@ -59,28 +61,24 @@
   }
 
   &__tv {
-    display: flex;
+    align-self: center;
+    display: grid;
+    justify-self: center;
+    max-width: 400px;
 
-    @media (max-width: 1200px) {
-      order: 1;
-    }
-
-    @media (max-width: 1000px) {
-      order: 0;
-    }
-  }
-
-  &__right-content-wrapper {
-    display: flex;
-    flex: 0 1 460px;
-
-    @media (max-width: 1000px) {
-      flex-basis: 250px;
+    & img {
+      width: 100%;
     }
   }
 
   &__right-content {
+    align-self: center;
+    display: grid;
     max-width: 460px;
+
+    @media (max-width: 1200px) {
+      justify-self: center;
+    }
 
     & p {
       color: #151515;
@@ -111,6 +109,7 @@
           display: inline-block;
           height: 30px;
           margin-right: 20px;
+          min-width: 30px;
           width: 30px;
         }
 

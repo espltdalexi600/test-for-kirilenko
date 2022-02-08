@@ -17,6 +17,10 @@
     height: auto;
   }
 
+  @media (max-width: $mobile_width) {
+    padding: 0 15px;
+  }
+
   &__logo-site {
     align-self: center;
     display: grid;

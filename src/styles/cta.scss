@@ -1,6 +1,10 @@
 .cta {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 50px;
+
+  @media (max-width: $mobile_width) {
+    padding: 50px 15px;
+  }
 
   &__bg {
     background-image: url('../img/nathan-dumlao-485797-unsplash.png');
