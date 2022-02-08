@@ -54,8 +54,10 @@ $mobile_width: 757px;
   padding: 0 55px;
   text-transform: uppercase;
 
-  &:hover {
-    background-color: #c0ab31;
+  @media (hover: hover) {
+    &:hover {
+      background-color: #c0ab31;
+    }
   }
 }
 

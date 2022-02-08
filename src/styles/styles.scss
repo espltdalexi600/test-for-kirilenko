@@ -2,6 +2,10 @@
 @import './fonts.scss';
 @import './common.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -13,6 +17,5 @@
 @import './why-we.scss';
 @import './services.scss';
 @import './step-one.scss';
-
 @import './cta.scss';
 @import './footer.scss';
