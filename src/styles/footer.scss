@@ -20,9 +20,11 @@
   &__logo-site {
     align-self: center;
     display: grid;
+    font-family: 'Proxima_Nova-Semibold';
     font-size: 12px;
     line-height: 18px;
     margin: 20px 0;
+    opacity: 0.7;
 
     & p {
       color: #707070;
@@ -64,6 +66,7 @@
     & > span {
       align-items: center;
       display: flex;
+      font-family: 'Proxima_Nova-Semibold';
       font-size: 12px;
       letter-spacing: -0.5px;
       line-height: 12px;
@@ -80,6 +83,7 @@
     & > a {
       color: #151515;
       display: block;
+      font-family: 'Proxima_Nova-Bold';
       font-size: 18px;
       line-height: 22px;
       margin-top: 7px;
@@ -95,6 +99,7 @@
     width: 169px;
 
     & > span:first-child {
+      font-family: 'Proxima_Nova-Semibold';
       font-size: 12px;
       letter-spacing: -0.5px;
       line-height: 12px;
@@ -109,6 +114,7 @@
     }
 
     & > span:last-child {
+      font-family: 'Proxima_Nova-Bold';
       font-size: 18px;
       line-height: 22px;
       margin-top: 7px;
@@ -129,6 +135,7 @@
     }
 
     & > span:first-child {
+      font-family: 'Proxima_Nova-Semibold';
       font-size: 12px;
       letter-spacing: -0.5px;
       line-height: 12px;
@@ -143,6 +150,7 @@
     }
 
     & > span:last-child {
+      font-family: 'Proxima_Nova-Bold';
       font-size: 18px;
       line-height: 22px;
       margin-top: 7px;

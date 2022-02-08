@@ -45,6 +45,7 @@
 
     & h3 {
       color: #fee040;
+      font-family: 'BebasNeue-Bold';
       font-size: 20px;
       line-height: 16px;
       letter-spacing: 20px;
@@ -54,6 +55,7 @@
 
     & h4 {
       color: #ffffff;
+      font-family: 'Gilroy-ExtraBold';
       font-size: 32px;
       line-height: 42px;
       letter-spacing: -0.5px;
@@ -108,6 +110,7 @@
       }
 
       & h5 {
+        font-family: 'Proxima_Nova-Extrabold';
         font-size: 24px;
         letter-spacing: -0.5px;
         line-height: 28px;
@@ -115,6 +118,7 @@
       }
 
       & p {
+        font-family: 'Proxima_Nova-Semibold';
         font-size: 16px;
         letter-spacing: -0.5px;
         line-height: 26px;
@@ -126,6 +130,7 @@
         bottom: 0;
         color: #fee040;
         display: flex;
+        font-family: 'BebasNeue-Bold';
         font-size: 20px;
         left: 0;
         letter-spacing: 7px;

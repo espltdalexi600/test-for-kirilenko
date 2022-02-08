@@ -50,6 +50,7 @@
   &__mail {
     display: flex;
     flex-direction: column;
+    font-family: 'Proxima_Nova-Semibold';
     font-size: 12px;
     line-height: 12px;
     width: 131px;
@@ -77,6 +78,7 @@
     width: 188px;
 
     & > span:first-child {
+      font-family: 'Proxima_Nova-Semibold';
       font-size: 12px;
       line-height: 12px;
       opacity: 50%;
@@ -90,6 +92,7 @@
     }
 
     & > span:last-child {
+      font-family: 'Proxima_Nova-Bold';
       font-size: 20px;
       line-height: 24px;
       margin-top: 7px;

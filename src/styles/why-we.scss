@@ -39,6 +39,7 @@
 
     & h3 {
       color: #151515;
+      font-family: 'Gilroy-ExtraBold';
       font-size: 32px;
       height: 126px;
       letter-spacing: -0.5px;
@@ -48,10 +49,12 @@
 
     & p {
       color: #707070;
+      font-family: 'Proxima_Nova-Semibold';
       font-size: 18px;
       height: 84px;
       letter-spacing: -0.5px;
       line-height: 28px;
+      opacity: 0.7;
     }
   }
 
@@ -81,6 +84,7 @@
 
     & p {
       color: #151515;
+      font-family: 'Proxima_Nova-Bold';
       font-size: 24px;
       letter-spacing: -0.5px;
       line-height: 34px;
@@ -90,6 +94,7 @@
 
     & ul {
       color: #333333;
+      font-family: 'Proxima_Nova-Semibold';
 
       & li {
         align-items: center;
@@ -99,7 +104,7 @@
         line-height: 26px;
         margin-bottom: 19px;
 
-        & span {
+        & > span:first-child {
           background-color: #fee040;
           background-size: 14px 14px;
           border-radius: 50%;
@@ -107,6 +112,10 @@
           height: 30px;
           margin-right: 20px;
           width: 30px;
+        }
+
+        & > span:last-child {
+          opacity: 0.7;
         }
       }
     }
