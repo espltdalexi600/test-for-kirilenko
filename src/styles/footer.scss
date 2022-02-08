@@ -20,13 +20,20 @@
   &__logo-site {
     align-self: center;
     display: grid;
+    font-size: 12px;
+    line-height: 18px;
     margin: 20px 0;
 
     & p {
       color: #707070;
-      font-size: 12px;
-      line-height: 18px;
       max-width: 296px;
+    }
+
+    & a {
+      color: #2f80ed;
+      display: inline-block;
+      height: 16px;
+      border-bottom: 1px solid #2f80ed;
     }
   }
 
@@ -71,6 +78,7 @@
     }
 
     & > a {
+      color: #151515;
       display: block;
       font-size: 18px;
       line-height: 22px;
